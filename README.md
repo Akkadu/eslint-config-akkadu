@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Akkadu Javascript Style Guide 👋</h1>
+<h1 align="center">Akkadu Javascript Styleguide</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> Nothing is perfect, but perhaps things could be just a little bit less terrible
+> Nothing is perfect, but with diligence and persistance, perhaps it could just suck a bit less
 
 ## Install
 
@@ -23,7 +23,7 @@ yarn install
 yarn run test
 ```
 
-## Author
+## Authors
 
 👤 **JT Houk <jt1992@gmail.com> (https://jt.houk.space/)**
 
@@ -31,10 +31,3 @@ yarn run test
 * Twitter: [@HoukasaurusRex](https://twitter.com/HoukasaurusRex)
 * Github: [@HoukasaurusRex](https://github.com/HoukasaurusRex)
 * LinkedIn: [@JT Houk](https://linkedin.com/in/JT Houk)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
