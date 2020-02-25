@@ -11,6 +11,13 @@
 
 > Nothing is perfect, but with diligence and persistance, perhaps it could just suck a bit less
 
+
+https://github.com/hudochenkov/stylelint-order
+https://github.com/kristerkari/stylelint-scss
+
+https://prettier.io/docs/en/integrating-with-linters.html#use-eslint-to-run-prettier
+
+
 ## Install
 
 ```sh
