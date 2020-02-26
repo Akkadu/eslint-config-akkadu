@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-arrow-callback": "error",
+    "no-unused-vars": "warn",
+    "quotes": ["error", "single"]
+  }
+}

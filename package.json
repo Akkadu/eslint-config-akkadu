@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-akkadu",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.4",
+  "description": "Eslint config for Akkadu's Javascript coding standards",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\""
@@ -12,11 +12,6 @@
   ],
   "author": "JT Houk <jt1992@gmail.com> (https://jt.houk.space/)",
   "license": "MIT",
-  "devDependencies": {
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.7"
-  },
-  "dependencies": {},
   "peerDependencies": {
     "eslint": ">= 6",
     "eslint-config-airbnb-base": "^14.0.0",
