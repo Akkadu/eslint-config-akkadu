@@ -1,25 +1,30 @@
 {
   "name": "eslint-config-akkadu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "author": "JT Houk <jt1992@gmail.com> (https://jt.houk.space/)",
   "license": "MIT",
   "devDependencies": {
     "husky": "^4.2.3",
     "lint-staged": "^10.0.7"
   },
-  "dependencies": {
-    "eslint": "^6.8.0",
+  "dependencies": {},
+  "peerDependencies": {
+    "eslint": ">= 6",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.2.1",
+    "markdownlint": "^0.19.0",
     "prettier": "^1.19.1",
     "stylelint": "^13.2.0",
     "stylelint-config-sass-guidelines": "^7.0.0",
