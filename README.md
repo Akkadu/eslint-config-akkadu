@@ -28,17 +28,20 @@ Get started on Javascript projects at Akkadu much quicker by using this template
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
+- [![Akkadu Eslint Config](#akkadu-eslint-config)
+  - [Table of Contents](#table-of-contents)
+  - [About The Project](#about-the-project)
+    - [Built With](#built-with)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Usage](#usage)
+  - [Roadmap](#roadmap)
+  - [Edge Cases Addressed](#edge-cases-addressed)
+  - [Contributing](#contributing)
+  - [Author](#author)
+  - [Dependencies](#dependencies)
+  - [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -100,6 +103,40 @@ yarn add -D prettier eslint-config-akkadu
 ## Roadmap
 
 See the [open issues](https://github.com/Akkadu/eslint-config-akkadu/issues) for a list of proposed features (and known issues)
+
+<!-- EDGE CASES -->
+## Edge Cases Addressed
+`eslint-config-akkadu` also adds a few rules that have had some problems in the recent past. These are the kinds of problems that may be inconsistent in occurence and will probably prop up as your dependency versions change:
+
+1. **`babel-eslint` template literal indentation** ([`babel/babel-eslint` issue #799](https://github.com/babel/babel-eslint/issues/799#issuecomment-651954838))
+    Depending your current version of `babel-eslint` or `@babel/parser`, the following ESlint error may present itself in places that use template literals in code:
+    ```bash
+    TypeError: Cannot read property 'range' of null
+    ```
+
+    This was fixed by adding the following snippet to the indent rule:
+    
+    _Source: [babel/babel-eslint#799 (comment)](https://github.com/babel/babel-eslint/issues/799#issuecomment-651954838)_
+
+    ```json
+    {
+      "rules": {
+        "indent": [
+          "error",
+          2,
+          {
+            "SwitchCase": 1,
+            "ignoredNodes": [
+              "TemplateLiteral"
+            ]
+          }
+        ],
+        "template-curly-spacing": 0
+      }
+    }
+    ```
+
+    This issue will be resolved by future versions of Babel. We can remove if from the config then.
 
 <!-- CONTRIBUTING -->
 ## Contributing
