@@ -27,9 +27,6 @@ Get started on Javascript projects at Akkadu much quicker by using this template
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
-
-- [![Akkadu Eslint Config](#akkadu-eslint-config)
-  - [Table of Contents](#table-of-contents)
   - [About The Project](#about-the-project)
     - [Built With](#built-with)
   - [Getting Started](#getting-started)
@@ -105,7 +102,7 @@ yarn add -D prettier eslint-config-akkadu
 See the [open issues](https://github.com/Akkadu/eslint-config-akkadu/issues) for a list of proposed features (and known issues)
 
 <!-- EDGE CASES -->
-## Edge Cases Addressed
+### Edge Cases Addressed
 `eslint-config-akkadu` also adds a few rules that have had some problems in the recent past. These are the kinds of problems that may be inconsistent in occurence and will probably prop up as your dependency versions change:
 
 1. **`babel-eslint` template literal indentation** ([`babel/babel-eslint` issue #799](https://github.com/babel/babel-eslint/issues/799#issuecomment-651954838))
