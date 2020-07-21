@@ -5,6 +5,17 @@
     "prefer-const": "error",
     "prefer-arrow-callback": "error",
     "no-unused-vars": "warn",
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "TemplateLiteral"
+        ]
+      }
+    ],
+    "template-curly-spacing": 0
   }
 }
