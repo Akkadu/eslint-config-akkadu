@@ -4,7 +4,8 @@
   "description": "Eslint config for Akkadu's Javascript coding standards",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "eslint": "eslint --fix"
   },
   "keywords": [
     "eslint",
@@ -12,7 +13,7 @@
   ],
   "author": "JT Houk <jt1992@gmail.com> (https://jt.houk.space/)",
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "eslint": ">= 6",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.10.0",
@@ -30,5 +31,14 @@
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.1.0"
+  },
+  "devDependencies": {
+    "husky": "^4.3.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn eslint",
+      "pre-push": "yarn test && yarn version"
+    }
   }
 }
