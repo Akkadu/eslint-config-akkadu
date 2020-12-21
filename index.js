@@ -1,6 +1,7 @@
+const { extends } = require('./config/extends.json')
+const { rules } = require('./config/rules.json')
+
 module.exports = {
-  extends: [
-    "./config/extends.json",
-    "./config/rules.json"
-  ]
+  extends,
+  rules
 }
