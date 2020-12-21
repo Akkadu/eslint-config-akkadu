@@ -1,7 +1,3 @@
-const { extends } = require('./config/extends.json')
-const { rules } = require('./config/rules.json')
+const eslintrc = require('./.eslintrc.js');
 
-module.exports = {
-  extends,
-  rules
-}
+module.exports = eslintrc;

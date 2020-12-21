@@ -14,14 +14,14 @@
   "author": "JT Houk <jt1992@gmail.com> (https://jt.houk.space/)",
   "license": "MIT",
   "dependencies": {
-    "eslint": ">= 6",
+    "eslint": "^7.16.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-vue": "^6.2.1",
     "markdownlint": "^0.19.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.2.1",
     "stylelint": "^13.2.0",
     "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-config-standard": "^20.0.0",
@@ -33,6 +33,10 @@
     "tslint-plugin-prettier": "^2.1.0"
   },
   "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.6"
   },
   "husky": {
